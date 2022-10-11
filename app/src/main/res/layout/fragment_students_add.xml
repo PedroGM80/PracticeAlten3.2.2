@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentsAddFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/students_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_margin="12dp">
+
+        <EditText
+            android:id="@+id/addUserInputStudentFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Full name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/addUserInputStudentNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="Note"
+            app:layout_constraintEnd_toEndOf="@id/addUserInputStudentFullName"
+            app:layout_constraintStart_toStartOf="@id/addUserInputStudentFullName"
+            app:layout_constraintTop_toTopOf="@id/addUserInputStudentFullName" />
+
+        <ImageView
+            android:id="@+id/imageViewStudent"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="24dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            app:layout_constraintEnd_toEndOf="@id/addUserInputStudentNote"
+            app:layout_constraintStart_toStartOf="@id/addUserInputStudentNote"
+            app:layout_constraintTop_toBottomOf="@id/addUserInputStudentNote" />
+
+        <EditText
+            android:id="@+id/addUserInputStudentImageSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textWebEditText"
+            android:minHeight="48dp"
+            android:text="Image link"
+            app:layout_constraintEnd_toEndOf="@id/imageViewStudent"
+            app:layout_constraintStart_toStartOf="@id/imageViewStudent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewStudent" />
+
+
+        <EditText
+            android:id="@+id/addUserInputStudentCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textWebEditText"
+            android:minHeight="48dp"
+            android:text="Note"
+            app:layout_constraintEnd_toEndOf="@id/addUserInputStudentImageSource"
+            app:layout_constraintStart_toStartOf="@id/addUserInputStudentImageSource"
+            app:layout_constraintTop_toBottomOf ="@id/addUserInputStudentImageSource" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

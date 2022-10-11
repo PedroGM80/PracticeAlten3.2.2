@@ -22,4 +22,9 @@
         android:name="dev.pgm.practicealten322.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/studentsAddFragment"
+        android:name="dev.pgm.practicealten322.StudentsAddFragment"
+        android:label="fragment_students_add"
+        tools:layout="@layout/fragment_students_add" />
 </navigation>
