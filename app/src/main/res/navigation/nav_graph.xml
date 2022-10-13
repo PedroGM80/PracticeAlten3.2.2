@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="dev.pgm.practicealten322.FirstFragment"
+        android:name="dev.pgm.practicealten322.FragmentStudentList"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_student_list">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"

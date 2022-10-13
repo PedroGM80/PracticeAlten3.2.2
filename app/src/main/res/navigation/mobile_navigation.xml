@@ -9,7 +9,14 @@
         android:id="@+id/nav_home"
         android:name="dev.pgm.practicealten322.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_studentsAddFragment"
+            app:destination="@id/studentsAddFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_studentListActivity"
+            app:destination="@id/studentListActivity" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -27,4 +34,9 @@
         android:name="dev.pgm.practicealten322.StudentsAddFragment"
         android:label="fragment_students_add"
         tools:layout="@layout/fragment_students_add" />
+    <activity
+        android:id="@+id/studentListActivity"
+        android:name="dev.pgm.practicealten322.StudentListActivity"
+        android:label="activity_student_list"
+        tools:layout="@layout/activity_student_list" />
 </navigation>

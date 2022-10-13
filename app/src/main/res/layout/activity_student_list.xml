@@ -20,7 +20,9 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_student_list" />
+    <include
+        android:id="@+id/include_list_students"
+        layout="@layout/row_student" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
