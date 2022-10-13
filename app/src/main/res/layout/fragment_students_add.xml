@@ -20,81 +20,98 @@
             android:id="@+id/addUserInputStudentImageSource"
             android:layout_width="343dp"
             android:layout_height="48dp"
+            android:layout_marginStart="34dp"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="34dp"
             android:ems="10"
             android:inputType="textWebEditText"
             android:minHeight="48dp"
             android:text="Image link"
-            app:layout_constraintBottom_toTopOf="@+id/addUserInputStudentCourse"
+            app:layout_constraintBottom_toTopOf="@+id/addUserInputStudentDateOfBirth"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageViewStudent" />
-
-        <ImageView
-            android:id="@+id/imageViewStudent"
-            android:layout_width="210dp"
-            android:layout_height="124dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:src="@android:drawable/ic_menu_gallery"
-            app:layout_constraintBottom_toTopOf="@+id/addUserInputStudentImageSource"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/imageViewStudent"
+            app:layout_constraintVertical_bias="0.5" />
 
         <EditText
             android:id="@+id/addUserInputStudentDateOfBirth"
             android:layout_width="150dp"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:text="Date of Birth"
-            app:layout_constraintEnd_toEndOf="@+id/addUserInputStudentImageSource"
-            app:layout_constraintStart_toEndtOf="addUserInputStudentFullName"
-            app:layout_constraintTop_toBottomOf="@+id/addUserInputStudentImageSource" />
+            app:layout_constraintBottom_toTopOf="@+id/addUserInputStudentFullName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addUserInputStudentCourse"
+            app:layout_constraintTop_toBottomOf="@+id/addUserInputStudentImageSource"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/imageViewStudent"
+            android:layout_width="210dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="100dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            app:layout_constraintBottom_toTopOf="@+id/addUserInputStudentImageSource"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
 
         <EditText
             android:id="@+id/addUserInputStudentFullName"
             android:layout_width="150dp"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="34dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:text="Full name"
-            app:layout_constraintEnd_toEndOf="@+id/addUserInputStudentDateOfBirth"
-            app:layout_constraintStart_toStartOf="@+id/addUserInputStudentDateOfBirth"
-            app:layout_constraintTop_toBottomOf="@+id/addUserInputStudentDateOfBirth" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addUserInputStudentNote"
+            app:layout_constraintTop_toBottomOf="@+id/addUserInputStudentDateOfBirth"
+            app:layout_constraintVertical_bias="0.5" />
 
         <EditText
             android:id="@+id/addUserInputStudentCourse"
             android:layout_width="150dp"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="34dp"
             android:layout_marginEnd="43dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:inputType="textWebEditText"
             android:minHeight="48dp"
             android:text="Course"
+            app:layout_constraintBottom_toTopOf="@+id/addUserInputStudentNote"
             app:layout_constraintEnd_toStartOf="@+id/addUserInputStudentDateOfBirth"
-            app:layout_constraintStart_toStartOf="@+id/addUserInputStudentImageSource"
-            app:layout_constraintTop_toBottomOf="@+id/addUserInputStudentImageSource" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addUserInputStudentImageSource"
+            app:layout_constraintVertical_bias="0.5" />
 
         <EditText
             android:id="@+id/addUserInputStudentNote"
             android:layout_width="150dp"
             android:layout_height="48dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="43dp"
             android:ems="10"
             android:inputType="text"
             android:minHeight="48dp"
             android:text="Note"
-            app:layout_constraintEnd_toEndOf="@+id/addUserInputStudentCourse"
-            app:layout_constraintStart_toStartOf="@+id/addUserInputStudentCourse"
-            app:layout_constraintTop_toBottomOf="@+id/addUserInputStudentCourse" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/addUserInputStudentFullName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addUserInputStudentCourse"
+            app:layout_constraintVertical_bias="0.5" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
